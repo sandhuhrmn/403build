@@ -33,12 +33,13 @@ nav a:hover {
     height: 80vh;
     background:
         linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
-        url("https://images.unsplash.com/photo-1599423300746-b62533397364") center/cover no-repeat;
+        url("b530e9be-bb4d-4b18-9df7-971a86d74ba6.jpeg") center/cover no-repeat;
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
 }
+
 
 .hero-content {
     color: white;
@@ -106,4 +107,5 @@ footer {
     text-align: center;
     padding: 20px;
 }
+
 
