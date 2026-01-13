@@ -30,16 +30,15 @@ nav a:hover {
 }
 
 .hero {
-    height: 80vh;
+    height: 85vh;
     background:
-        linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
-        url("b530e9be-bb4d-4b18-9df7-971a86d74ba6.jpeg") center/cover no-repeat;
+        linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.45)),
+        url("PHOTO-2026-01-13-13-17-19.jpg") center center / cover no-repeat;
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
 }
-
 
 .hero-content {
     color: white;
@@ -116,5 +115,6 @@ footer {
 .instagram-media {
     margin: 20px auto !important;
 }
+
 
 
