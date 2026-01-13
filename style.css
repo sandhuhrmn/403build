@@ -36,7 +36,7 @@ nav a:hover {
             rgba(0, 0, 0, 0.45),
             rgba(0, 0, 0, 0.45)
         ),
-        url("PHOTO-2026-01-13-13-17-19.jpg");
+        url("hero.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -123,6 +123,7 @@ footer {
 .instagram-media {
     margin: 20px auto !important;
 }
+
 
 
 
