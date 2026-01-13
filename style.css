@@ -108,4 +108,13 @@ footer {
     padding: 20px;
 }
 
+.insta-posts {
+    max-width: 900px;
+    margin: 40px auto;
+}
+
+.instagram-media {
+    margin: 20px auto !important;
+}
+
 
