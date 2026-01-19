@@ -11,6 +11,53 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&family=Open+Sans:wght@400;500;600&display=swap" rel="stylesheet">
 </head>
+<!-- Quote Request Modal -->
+<div class="modal-overlay" id="quote-modal">
+  <div class="modal">
+    <button class="modal-close" id="close-quote-modal">&times;</button>
+    <h3>Request a Quote</h3>
+    <p>Tell us a bit about your project and we’ll get back to you.</p>
+
+    <form class="quote-form">
+      <div class="form-group">
+        <label for="quote-name">Name</label>
+        <input type="text" id="quote-name" name="name" placeholder="Your full name" required>
+      </div>
+
+      <div class="form-group">
+        <label for="quote-email">Email</label>
+        <input type="email" id="quote-email" name="email" placeholder="you@example.com" required>
+      </div>
+
+      <div class="form-group">
+        <label for="quote-phone">Phone</label>
+        <input type="tel" id="quote-phone" name="phone" placeholder="(403) 000-0000">
+      </div>
+
+      <div class="form-group">
+        <label for="quote-service">What do you need done?</label>
+        <select id="quote-service" name="service">
+          <option value="">Select a service</option>
+          <option value="basement">Basement development / suite</option>
+          <option value="kitchen">Kitchen renovation</option>
+          <option value="bathroom">Bathroom renovation</option>
+          <option value="whole-home">Whole-home renovation</option>
+          <option value="other">Other project</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="quote-details">Project details</label>
+        <textarea id="quote-details" name="details" rows="4"
+          placeholder="Tell us about your project, timeline, and location"></textarea>
+      </div>
+
+      <button type="submit" class="btn btn-primary btn-large">
+        Send Request
+      </button>
+    </form>
+  </div>
+</div>
 <body>
 
 <header class="header">
@@ -36,8 +83,10 @@
         <h1>Transform Your Space Into Your <span class="highlight">Dream Home</span></h1>
         <p class="hero-description">Family-owned craftsmanship delivering quality renovations and construction services across Calgary and surrounding areas.</p>
         <div class="hero-buttons">
-            <a href="#contact" class="btn btn-primary">Get Free Quote</a>
-            <a href="#projects" class="btn btn-secondary">View Our Work</a>
+           <a href="#" class="btn btn-primary btn-large" id="open-quote-modal">
+  Get Your Free Quote
+</a>
+ <a href="#projects" class="btn btn-secondary">View Our Work</a>
         </div>
         <div class="hero-trust">
             <div class="trust-item">
