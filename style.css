@@ -895,3 +895,87 @@ footer p {
         text-align: center;
     }
 }
+/* ===== QUOTE MODAL ===== */
+
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6);
+  display: none;
+  align-items: center;
+  justify-content: center;
+  z-index: 2000;
+}
+
+.modal-overlay.active {
+  display: flex;
+}
+
+.modal {
+  background: var(--white);
+  padding: 30px 30px 35px;
+  border-radius: 12px;
+  max-width: 500px;
+  width: 90%;
+  box-shadow: var(--shadow-lg);
+  position: relative;
+}
+
+.modal h3 {
+  margin-bottom: 10px;
+  font-size: 24px;
+  color: var(--secondary);
+}
+
+.modal p {
+  margin-bottom: 20px;
+  color: var(--gray);
+  font-size: 15px;
+}
+
+.modal-close {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  background: transparent;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  color: var(--gray);
+}
+
+.modal-close:hover {
+  color: var(--primary);
+}
+
+.quote-form .form-group {
+  margin-bottom: 15px;
+  text-align: left;
+}
+
+.quote-form label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 5px;
+  color: var(--secondary);
+}
+
+.quote-form input,
+.quote-form select,
+.quote-form textarea {
+  width: 100%;
+  padding: 10px 12px;
+  border-radius: 6px;
+  border: 1px solid #ddd;
+  font-size: 14px;
+  font-family: inherit;
+}
+
+.quote-form input:focus,
+.quote-form select:focus,
+.quote-form textarea:focus {
+  outline: none;
+  border-color: var(--primary);
+  box-shadow: 0 0 0 2px rgba(242, 140, 40, 0.15);
+}
+
